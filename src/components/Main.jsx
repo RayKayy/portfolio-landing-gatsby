@@ -38,7 +38,27 @@ Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisi
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
           <h2 className="major">About</h2>
           <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <p>
+            I am a software developer, with experience developing robust web applications
+            and working in an AGILE environment.
+            Even though my academic background is in environmental management,
+            my passion has led me towards a career path in software development.
+          </p>
+          <p>
+            Technology has always intrigued me with the way
+            that it impacts our society at a scale so out of proportion;
+            affecting the everyday lives of an enormous population.
+          </p>
+          <p>
+            My passion and career have allowed me to initiate and maintain web applications
+            based on the Microservices Architecture; as well as building user friendly responsive UIs
+            using multiple frameworks with varying audiences.
+          </p>
+          <p>
+            I am currently working as a Software Developer@
+            <a href="https://www.brokerbay.ca" target="_blank" rel="noopener noreferrer">BrokerBay</a>
+            .
+          </p>
           {close}
         </article>
 

@@ -17,7 +17,9 @@ const Header = (props) => {
           <h1>Raymond Kwan</h1>
           <p>
             A Software Developer
-            with a passion for anything technology related.
+            with a passion for anything technology related
+            <br />
+            From Hong Kong. Raised in Shanghai. Living in Toronto.
           </p>
         </div>
       </div>
