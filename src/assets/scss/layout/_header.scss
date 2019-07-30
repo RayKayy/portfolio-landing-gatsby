@@ -53,7 +53,13 @@
 			line-height: 5.5rem;
 			border: solid _size(border-width) _palette(border);
 			border-radius: 100%;
+			overflow: hidden;
 
+			img {
+				width: 100%;
+				height: auto;
+				transform: translateY(-0.5em);
+			}
 			.icon {
 				&:before {
 					font-size: 2rem;
