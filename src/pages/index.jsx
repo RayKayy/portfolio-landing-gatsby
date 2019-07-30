@@ -1,36 +1,36 @@
-import React from 'react'
-import Layout from '../components/layout'
+import React from 'react';
+import Layout from '../components/layout';
 
-import Header from '../components/Header'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+import Header from '../components/Header';
+import Main from '../components/Main';
+import Footer from '../components/Footer';
 
 class IndexPage extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       isArticleVisible: false,
       timeout: false,
       articleTimeout: false,
       article: '',
-      loading: 'is-loading'
-    }
-    this.handleOpenArticle = this.handleOpenArticle.bind(this)
-    this.handleCloseArticle = this.handleCloseArticle.bind(this)
+      loading: 'is-loading',
+    };
+    this.handleOpenArticle = this.handleOpenArticle.bind(this);
+    this.handleCloseArticle = this.handleCloseArticle.bind(this);
     this.setWrapperRef = this.setWrapperRef.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.timeoutId = setTimeout(() => {
-        this.setState({loading: ''});
+      this.setState({ loading: '' });
     }, 100);
     document.addEventListener('mousedown', this.handleClickOutside);
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     if (this.timeoutId) {
-        clearTimeout(this.timeoutId);
+      clearTimeout(this.timeoutId);
     }
     document.removeEventListener('mousedown', this.handleClickOutside);
   }
@@ -40,45 +40,41 @@ class IndexPage extends React.Component {
   }
 
   handleOpenArticle(article) {
-
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
-      article
-    })
+      article,
+    });
 
     setTimeout(() => {
       this.setState({
-        timeout: !this.state.timeout
-      })
-    }, 325)
+        timeout: !this.state.timeout,
+      });
+    }, 325);
 
     setTimeout(() => {
       this.setState({
-        articleTimeout: !this.state.articleTimeout
-      })
-    }, 350)
-
+        articleTimeout: !this.state.articleTimeout,
+      });
+    }, 350);
   }
 
   handleCloseArticle() {
-
     this.setState({
-      articleTimeout: !this.state.articleTimeout
-    })
+      articleTimeout: !this.state.articleTimeout,
+    });
 
     setTimeout(() => {
       this.setState({
-        timeout: !this.state.timeout
-      })
-    }, 325)
+        timeout: !this.state.timeout,
+      });
+    }, 325);
 
     setTimeout(() => {
       this.setState({
         isArticleVisible: !this.state.isArticleVisible,
-        article: ''
-      })
-    }, 350)
-
+        article: '',
+      });
+    }, 350);
   }
 
   handleClickOutside(event) {
@@ -105,11 +101,11 @@ class IndexPage extends React.Component {
             />
             <Footer timeout={this.state.timeout} />
           </div>
-          <div id="bg"></div>
+          <div id="bg" />
         </div>
       </Layout>
-    )
+    );
   }
 }
 
-export default IndexPage
+export default IndexPage;
