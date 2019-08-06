@@ -59,8 +59,10 @@ const Main = (props) => {
       <article id="contact" className={`${props.article === 'contact' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
         <h2 className="major">Contact</h2>
         <form method="post" action="#">
-          Work in progress
-          {/* <div className="field half first">
+          Work in progress...
+          Form currently will not work
+          {/* Create hooks to notify me through some means */}
+          <div className="field half first">
             <label htmlFor="name">Name</label>
             <input type="text" name="name" id="name" />
           </div>
@@ -75,7 +77,7 @@ const Main = (props) => {
           <ul className="actions">
             <li><input type="submit" value="Send Message" className="special" /></li>
             <li><input type="reset" value="Reset" /></li>
-          </ul> */}
+          </ul>
         </form>
         {close}
       </article>
