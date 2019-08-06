@@ -27,7 +27,6 @@ const Main = (props) => {
       }
     `,
   );
-  console.log(data)
   const close = <div role="button" className="close" onClick={() => { props.onCloseArticle(); }} />;
   return (
     <div ref={props.setWrapperRef} id="main" style={props.timeout ? { display: 'flex' } : { display: 'none' }}>

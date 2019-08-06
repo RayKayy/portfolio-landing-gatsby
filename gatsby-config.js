@@ -35,11 +35,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
+        name: 'raymond-kwan-portfolio',
         short_name: 'starter',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#9e9e9e',
+        theme_color: '#9e9e9e',
         display: 'minimal-ui',
         icon: 'src/images/r-icon.png', // This path is relative to the root of the site.
       },
